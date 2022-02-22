@@ -41,6 +41,9 @@ export default function BasicMenu() {
         alignItems="center"
         justifyContent="flex-start"
         spacing={{xl: 1}}
+        xs={7}
+        sm={2.8}
+        xl={3.7}
       >
         <Grid item xs={4.5} sm xl={1.5}>
           <Avatar
@@ -105,6 +108,9 @@ export default function BasicMenu() {
         alignItems="center"
         spacing={{xl: 1}}
         justifyContent="flex-end"
+        xs={5}
+        sm={2.5}
+        xl
       >
         <Grid item xs xl>
           <Typography variant="p" onClick={handleClick2}>

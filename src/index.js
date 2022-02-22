@@ -19,7 +19,7 @@ ReactDOM.render(
       <Route path="/adminboard" element={<Adminboard />} />
       <Route path="/createosr" element={<CreateOSR />} />
       <Route path="/welcome" element={<Welcome />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/loginhello" element={<Login />} />
     </Routes>
   </Router>,
   document.getElementById('root')

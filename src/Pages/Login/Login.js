@@ -7,13 +7,13 @@ import Link from '@mui/material/Link';
 import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import FilledInput from '@mui/material/FilledInput';
+//import FilledInput from '@mui/material/FilledInput';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
 import InputAdornment from '@mui/material/InputAdornment';
-import FormHelperText from '@mui/material/FormHelperText';
+//import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
-import TextField from '@mui/material/TextField';
+//import TextField from '@mui/material/TextField';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 
@@ -102,11 +102,11 @@ export default function Dashboard() {
             <div className='dfx-items'>
                 <h1 className='text-osr'>OSR</h1>
                 <h6 className='text-osr-detailed'>OPEN STUFFING REQUEST</h6>
-                <img className='dfx-icon' src={dfxIcon}></img>
+                <img className='dfx-icon' src={dfxIcon} alt="logo"></img>
             </div>
 
             <div className='next-gen-icon-div'>
-                <img className='next-gen-icon' src={nextGenIcon}></img>
+                <img className='next-gen-icon' src={nextGenIcon} alt="logo"></img>
             </div>
         </div>
     </div>

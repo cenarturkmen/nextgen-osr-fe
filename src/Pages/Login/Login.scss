@@ -1,0 +1,83 @@
+$blue: #0037ff;
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.left-side {
+}
+
+.right-side {
+    background-color: $blue;
+}
+
+.dfx-items {
+    position: absolute;
+    bottom: 7vh;
+    right: 14vh;
+}
+
+.dfx-icon {
+    width: 30vh;
+}
+
+.next-gen-icon-div {
+    position: absolute;
+    bottom: 2vh;
+    right: 2vh;
+}
+
+.next-gen-icon {
+    width: 11vh;
+}
+
+.text-osr {
+    font-size: 7vh;
+    color: white;
+    margin: 0;
+}
+
+.text-osr-detailed {
+    color: #FCDDEC;
+    font-size: 1vh;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.login-part {
+    margin: auto;
+    width: 300px;
+}
+
+.text-sign-in {
+    margin-left: 12px;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.link {
+    font-size: 13px;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+} 
+
+.checkbox {
+    font-size: 13px !important;
+}
+
+@media (min-width: 1400px) {
+    .col-xxl-4 {
+        flex: 0 0 auto;
+        width: 30% !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .col-xxl-8 {
+        flex: 0 0 auto;
+        width: 70% !important;
+    }
+}

@@ -8,6 +8,8 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import Adminboard from './Pages/Adminboard/Adminboard';
 import CreateOSR from './Pages/CreateOSR/CreateOSR';
 import Welcome from './Pages/Welcome/Welcome';
+import Login from './Pages/Login/Login';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <Router>
@@ -17,6 +19,7 @@ ReactDOM.render(
       <Route path="/adminboard" element={<Adminboard />} />
       <Route path="/createosr" element={<CreateOSR />} />
       <Route path="/welcome" element={<Welcome />} />
+      <Route path="/login" element={<Login />} />
     </Routes>
   </Router>,
   document.getElementById('root')

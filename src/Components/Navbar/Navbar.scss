@@ -1,0 +1,39 @@
+$blue: #0037ff;
+$white: #ffffff;
+$black: #000000;
+$gray: #F2F2F2;
+$green:  #39D52D;
+
+.navbar {
+    display: flex;
+    height:  100px;
+    background-color:  $blue;
+    align-items: center;
+    justify-content: space-between;
+    .navbar-left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: $white;
+        .MuiButton-textPrimary{
+            color: $white;
+        }
+        .MuiSvgIcon-root{
+            color: $white;
+        }
+    }
+    .navbar-right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: $white;
+    }
+}
+
+.navlink{
+    color: $black;
+    text-decoration: none;
+    &:hover{
+        color: $blue;
+    }
+}

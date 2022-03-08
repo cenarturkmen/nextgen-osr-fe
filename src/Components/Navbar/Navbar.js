@@ -136,8 +136,12 @@ export default function BasicMenu() {
             'aria-labelledby': 'basic-button',
           }}
         >
-          <MenuItem onClick={handleClose2}>Profile</MenuItem>
-          <MenuItem onClick={handleClose2}>My Account</MenuItem>
+          <MenuItem onClick={handleClose2}>
+            <NavLink className="navlink" to="/profile">
+              Profile
+            </NavLink>
+          </MenuItem>
+          {/* <MenuItem onClick={handleClose2}>My Account</MenuItem> */}
           <MenuItem onClick={handleClose2}>Logout</MenuItem>
         </Menu>
       </Grid>

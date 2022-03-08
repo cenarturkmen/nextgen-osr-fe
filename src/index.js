@@ -9,6 +9,11 @@ import Adminboard from './Pages/Adminboard/Adminboard';
 import CreateOSR from './Pages/CreateOSR/CreateOSR';
 import Welcome from './Pages/Welcome/Welcome';
 import Login from './Pages/Login/Login';
+import Profile from './Pages/Profile/Profile';
+import ChangePassword from './Pages/ChangePassword/ChangePassword';
+import CheckYourEmail from './Pages/CheckYourEmail/CheckYourEmail';
+import ForgotYourPassword from './Pages/ForgotYourPassword/ForgotYourPassword';
+import NewPassword from './Pages/NewPassword/NewPassword';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
@@ -20,6 +25,11 @@ ReactDOM.render(
       <Route path="/createosr" element={<CreateOSR />} />
       <Route path="/welcome" element={<Welcome />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/profile/edit" element={<ChangePassword />} />
+      <Route path="/checkyouremail" element={<CheckYourEmail />} />
+      <Route path="/forgotyourpassword" element={<ForgotYourPassword />} />
+      <Route path="/newpassword" element={<NewPassword />} />
     </Routes>
   </Router>,
   document.getElementById('root')

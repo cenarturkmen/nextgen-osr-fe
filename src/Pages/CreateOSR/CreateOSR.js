@@ -32,7 +32,7 @@ export default function CreateOSR() {
   // const [projectStartDate, setProjectStartDate] = useState(null);
 
   const handleChange = (event) => {
-    console.log("hello")
+    console.log('hello');
     //setAccount(event.target.value);
   };
 
@@ -41,8 +41,8 @@ export default function CreateOSR() {
       <Navbar />
       <Grid container>
         <ThemeProvider theme={theme}>
-          <Grid item xs={0} sm={0} md={0} lg={2} xl={1.5}></Grid>
-          <Grid item xs={12} sm md lg={8} xl={9}>
+          <Grid item xs={0} sm={0} md={0} lg={1.5}></Grid>
+          <Grid item xs={12} sm md lg={10}>
             <Typography className="header" variant="h4" gutterBottom>
               Create OSR
             </Typography>
@@ -59,10 +59,10 @@ export default function CreateOSR() {
                 eventual new hire.
               </Typography>
             </Typography>
-            <Box className="box-container" xl>
+            <Box className="box-container" lg xl>
               <Grid container>
-                <Grid item xs={0} sm={3} md={4} xl={2.9}></Grid>
-                <Grid item xs={0} sm={6} md lg={5} xl={6.2}>
+                <Grid item xs={0} sm={3} md={4} lg={2.9} ></Grid>
+                <Grid item xs={0} sm={6} md lg={6.2} >
                   <FormControl sx={{m: 2, minWidth: 350}}>
                     <InputLabel id="demo-simple-select-helper-label">
                       Account Name
@@ -156,7 +156,7 @@ export default function CreateOSR() {
                       label="Location or Remote"
                     />
                   </FormControl>
-                  <Grid item xs={0} xl={3}>
+                  <Grid item xs={0} lg={3} >
                     <FormControl className="jobTitleFromControl" sx={{m: 2}}>
                       <TextField
                         fullWidth={true}
@@ -200,7 +200,7 @@ export default function CreateOSR() {
                     />
                   </FormControl>
                 </Grid>
-                <Grid item xs={0} sm={0} md={3} xl={2.9}></Grid>
+                <Grid item xs={0} sm={0} md={3} lg={2.9}></Grid>
               </Grid>
             </Box>
             <Grid container>
@@ -218,7 +218,7 @@ export default function CreateOSR() {
                   Cancel
                 </Button>
               </Grid>
-              <Grid item xs={3.9} sm={8} md={9} xl={10.05}></Grid>
+              <Grid item xs={3.9} sm={8} md={9} lg={10.05}></Grid>
               <Grid item>
                 <Button
                   sx={{mt: 1}}
@@ -235,7 +235,7 @@ export default function CreateOSR() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={0} sm={0} xl={1.5}></Grid>
+          <Grid item xs={0} sm={0} lg={1.5} ></Grid>
         </ThemeProvider>
       </Grid>
     </div>

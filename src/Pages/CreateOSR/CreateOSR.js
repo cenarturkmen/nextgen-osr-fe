@@ -41,7 +41,7 @@ export default function CreateOSR() {
       <Navbar />
       <Grid container>
         <ThemeProvider theme={theme}>
-          <Grid item xs={0} sm={0} md={0} lg={1.5}></Grid>
+          <Grid item xs={0} sm={0} md={0} lg={1}></Grid>
           <Grid item xs={12} sm md lg={10}>
             <Typography className="header" variant="h4" gutterBottom>
               Create OSR
@@ -235,7 +235,7 @@ export default function CreateOSR() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={0} sm={0} lg={1.5} ></Grid>
+          <Grid item xs={0} sm={0} lg={1} ></Grid>
         </ThemeProvider>
       </Grid>
     </div>

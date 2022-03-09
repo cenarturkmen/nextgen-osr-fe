@@ -14,6 +14,8 @@ import ChangePassword from './Pages/ChangePassword/ChangePassword';
 import CheckYourEmail from './Pages/CheckYourEmail/CheckYourEmail';
 import ForgotYourPassword from './Pages/ForgotYourPassword/ForgotYourPassword';
 import NewPassword from './Pages/NewPassword/NewPassword';
+import OsrDetail from './Pages/OsrDetail/OsrDetail';
+import CreateProject from './Pages/CreateProject/CreateProject';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
@@ -30,6 +32,9 @@ ReactDOM.render(
       <Route path="/checkyouremail" element={<CheckYourEmail />} />
       <Route path="/forgotyourpassword" element={<ForgotYourPassword />} />
       <Route path="/newpassword" element={<NewPassword />} />
+      <Route path="/osrdetail" element={<OsrDetail />} />
+      <Route path="/createproject" element={<CreateProject />} />
+
     </Routes>
   </Router>,
   document.getElementById('root')

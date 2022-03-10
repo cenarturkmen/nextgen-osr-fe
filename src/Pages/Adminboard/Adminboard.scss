@@ -1,7 +1,9 @@
 .role {
     justify-content: flex-start;
+    margin: 10px;
 }
 
 .roles {
     display: flex;
+    flex-direction: column;
 }

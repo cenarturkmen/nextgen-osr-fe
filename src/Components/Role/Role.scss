@@ -10,11 +10,16 @@ $green: #39d52d;
 
 .privilege-card{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .MuiFormGroup-root{
     display: flex;
     flex-direction: row !important;
 
+}
+
+.role-button {
+    display: flex;
 }

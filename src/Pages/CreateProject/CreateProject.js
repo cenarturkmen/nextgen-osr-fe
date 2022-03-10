@@ -33,15 +33,15 @@ const ChangePassword = () => {
     showPasswordAgain: false,
   });
 
-  const handleClickShowPassword = () => {
-    setValues({
-      ...values,
-      showPassword: !values.showPassword,
-    });
-  };
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
+  // const handleClickShowPassword = () => {
+  //   setValues({
+  //     ...values,
+  //     showPassword: !values.showPassword,
+  //   });
+  // };
+  // const handleMouseDownPassword = (event) => {
+  //   event.preventDefault();
+  // };
   const handleChange = (prop) => (event) => {
     setValues({...values, [prop]: event.target.value});
   };

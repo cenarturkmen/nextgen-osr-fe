@@ -52,7 +52,7 @@ const Profile = () => {
               size="large"
               variant="contained"
               onClick={() => {
-                console.log('hello');
+                window.location.href = '/profile/edit';
               }}
             >
               Change Password

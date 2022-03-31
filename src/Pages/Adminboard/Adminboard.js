@@ -78,6 +78,7 @@ export default function Adminboard() {
 } else {
 window.location.href = '/login';
 }
+}
 
 const columns = [
   {field: 'id', headerName: 'ID', width: 90},

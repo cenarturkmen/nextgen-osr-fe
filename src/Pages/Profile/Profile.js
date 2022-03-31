@@ -39,6 +39,7 @@ const Profile = () => {
             <Typography className="header" variant="h4" gutterBottom>
               Profile
             </Typography>
+<<<<<<< HEAD
             <Card className="profile-card" style={{backgroundColor: '#f2f2f2'}}>
               <Typography className="p" variant="h5" gutterBottom>
                 Name: {Name}
@@ -64,6 +65,27 @@ const Profile = () => {
             </Card>
           </Grid>
           <Grid item xs={0} xl={1.5}></Grid>
+=======
+            <Typography className="p" variant="h5" gutterBottom>
+              Role: {Role}
+            </Typography>
+            <Typography className="p" variant="h5" gutterBottom>
+              Email: {Email}
+            </Typography>
+            <Button
+              sx={{mt: 1}}
+              className="button"
+              color="primary"
+              size="large"
+              variant="contained"
+              onClick={() => {
+                window.location.href = '/profile/edit';
+              }}
+            >
+              Change Password
+            </Button>
+          </Card>
+>>>>>>> b9421dc9069b8604a3f3bb28b9e4fd5c2803f574
         </Grid>
       </ThemeProvider>
     );

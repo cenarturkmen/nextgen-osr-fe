@@ -113,7 +113,7 @@ const columns = [
         size="small"
         style={{background: '#0037ff', marginLeft: 16}}
         onClick={() => {
-          console.log(params);
+          window.location.href = "/osrdetail/";
         }}
       >
         Open

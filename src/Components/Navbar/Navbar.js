@@ -101,6 +101,11 @@ export default function BasicMenu() {
               Admin Board
             </NavLink>
           </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <NavLink className="navlink" to="/createproject">
+              Create Project
+            </NavLink>
+          </MenuItem>
           <MenuItem onClick={handleClose}>Loggert</MenuItem>
           <MenuItem onClick={handleClose}>Export Report?</MenuItem>
         </Menu>

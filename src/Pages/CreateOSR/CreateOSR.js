@@ -35,7 +35,7 @@ export default function CreateOSR() {
     console.log('hello');
     //setAccount(event.target.value);
   };
-
+  if (localStorage.getItem('isLoggedIn') && localStorage.getItem('isLoggedIn') === 'true') {
   return (
     <div>
       <Navbar />
@@ -240,4 +240,7 @@ export default function CreateOSR() {
       </Grid>
     </div>
   );
+  } else {
+    window.location.href = '/login';
+  }
 }

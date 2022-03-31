@@ -33,6 +33,11 @@ export default function BasicMenu() {
     setAnchorEl2(null);
   };
 
+  const handleLogout = () => {
+    localStorage.setItem('isLoggedIn', 'false');
+    window.location.href = '/login';
+  };
+
   return (
     <div className="navbar">
       <Grid
@@ -142,7 +147,7 @@ export default function BasicMenu() {
             </NavLink>
           </MenuItem>
           {/* <MenuItem onClick={handleClose2}>My Account</MenuItem> */}
-          <MenuItem onClick={handleClose2}>Logout</MenuItem>
+          <MenuItem onClick={handleLogout}>Logout</MenuItem>
         </Menu>
       </Grid>
     </div>

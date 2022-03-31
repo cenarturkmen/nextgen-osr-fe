@@ -10,6 +10,7 @@ import rows from './fakeData.js';
 //import columns from './columns.js';
 
 export default function Dashboard() {
+  if (localStorage.getItem('isLoggedIn') && localStorage.getItem('isLoggedIn') === 'true') {
   return (
     <div>
       <Navbar />
@@ -39,6 +40,10 @@ export default function Dashboard() {
       </Grid>
     </div>
   );
+  } else {
+    window.location.href = '/login';
+    return <p> hello</p>;
+  }
 }
 
 const columns = [

@@ -48,7 +48,8 @@ export default function BasicMenu() {
         spacing={{xl: 1}}
         xs={7}
         sm={2.8}
-        xl={3.7}
+        lg={3}
+        xl={4.7}
       >
         <Grid item xs={4.5} sm xl={1.5}>
           <Avatar
@@ -110,7 +111,7 @@ export default function BasicMenu() {
           <MenuItem onClick={handleClose}>Export Report?</MenuItem>
         </Menu>
       </Grid>
-      <Grid item xs={0} sm={7} xl={7.3}></Grid>
+      <Grid item xs={0} sm={7} xl={10.3}></Grid>
 
       <Grid
         container
@@ -120,7 +121,7 @@ export default function BasicMenu() {
         justifyContent="flex-end"
         xs={5}
         sm={2.5}
-        xl
+        xl = {1.1}
       >
         <Grid item xs xl>
           <Typography variant="p" onClick={handleClick2}>

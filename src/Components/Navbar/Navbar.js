@@ -1,16 +1,16 @@
-import * as React from 'react';
+import * as React from "react";
 
-import './Navbar.scss';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import ListIcon from '@mui/icons-material/List';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import {Avatar} from '@mui/material';
-import {NavLink} from 'react-router-dom';
-import DFXicon from './../../static/images/DFXicon.png';
+import "./Navbar.scss";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import ListIcon from "@mui/icons-material/List";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { Avatar } from "@mui/material";
+import { NavLink } from "react-router-dom";
+import DFXicon from "./../../static/images/DFXicon.png";
 
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -34,8 +34,8 @@ export default function BasicMenu() {
   };
 
   const handleLogout = () => {
-    localStorage.setItem('isLoggedIn', 'false');
-    window.location.href = '/login';
+    localStorage.setItem("isLoggedIn", "false");
+    window.location.href = "/login";
   };
 
   return (
@@ -45,7 +45,7 @@ export default function BasicMenu() {
         className="navbar-left"
         alignItems="center"
         justifyContent="flex-start"
-        spacing={{xl: 1}}
+        spacing={{ xl: 1 }}
         xs={7}
         sm={2.8}
         lg={3}
@@ -56,23 +56,26 @@ export default function BasicMenu() {
             className="icon"
             alt="Dashboard"
             src={DFXicon}
-            sx={{width: 75, height: 75}}
+            sx={{ width: 75, height: 75 }}
+            onClick={() => {
+              window.location.href = "/dashboard";
+            }}
           />
         </Grid>
         <Grid item xs={1.5} sm xl={0.5}>
           <ListIcon
             fontSize="large"
-            aria-controls={openLeftMenu ? 'basic-menu' : undefined}
+            aria-controls={openLeftMenu ? "basic-menu" : undefined}
             aria-haspopup="true"
-            aria-expanded={openLeftMenu ? 'true' : undefined}
+            aria-expanded={openLeftMenu ? "true" : undefined}
             onClick={handleClick}
           />
         </Grid>
         <Grid item xs={2} sm xl={1}>
           <Button
-            aria-controls={openLeftMenu ? 'basic-menu' : undefined}
+            aria-controls={openLeftMenu ? "basic-menu" : undefined}
             aria-haspopup="true"
-            aria-expanded={openLeftMenu ? 'true' : undefined}
+            aria-expanded={openLeftMenu ? "true" : undefined}
             onClick={handleClick}
           >
             Menu
@@ -84,7 +87,7 @@ export default function BasicMenu() {
           open={openLeftMenu}
           onClose={handleClose}
           MenuListProps={{
-            'aria-labelledby': 'basic-button',
+            "aria-labelledby": "basic-button",
           }}
         >
           <MenuItem onClick={handleClose}>
@@ -117,11 +120,11 @@ export default function BasicMenu() {
         container
         className="navbar-right"
         alignItems="center"
-        spacing={{xl: 1}}
+        spacing={{ xl: 1 }}
         justifyContent="flex-end"
         xs={5}
         sm={2.5}
-        xl = {1.1}
+        xl={1.1}
       >
         <Grid item xs xl>
           <Typography variant="p" onClick={handleClick2}>
@@ -132,9 +135,9 @@ export default function BasicMenu() {
           <ArrowDropDownIcon
             fontSize="large"
             className="icon"
-            aria-controls={openRightMenu ? 'basic-menu' : undefined}
+            aria-controls={openRightMenu ? "basic-menu" : undefined}
             aria-haspopup="true"
-            aria-expanded={openRightMenu ? 'true' : undefined}
+            aria-expanded={openRightMenu ? "true" : undefined}
             onClick={handleClick2}
           />
         </Grid>
@@ -144,7 +147,7 @@ export default function BasicMenu() {
           open={openRightMenu}
           onClose={handleClose2}
           MenuListProps={{
-            'aria-labelledby': 'basic-button',
+            "aria-labelledby": "basic-button",
           }}
         >
           <MenuItem onClick={handleClose2}>

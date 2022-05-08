@@ -1,0 +1,12 @@
+.new-role-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.new-role-button {
+    display: flex;
+    justify-self: center;
+    margin-top: 10px !important;
+}

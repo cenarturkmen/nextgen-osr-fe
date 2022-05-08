@@ -1,0 +1,39 @@
+$blue: #0037ff;
+$white: #ffffff;
+$black: #000000;
+$gray: #f2f2f2;
+$green: #39d52d;
+
+.box-container {
+  padding: 50px;
+  background-color: $gray;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .box-container {
+    padding: 0;
+    background-color: $gray;
+    justify-content: center;
+  }
+}
+
+.box-inner {
+  width: 100%;
+  background: $white;
+}
+
+.datagrid {
+  width: 100%;
+}
+
+.contatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.MuiTypography-h4 {
+  padding: 20px 0px 5px 0px;
+}

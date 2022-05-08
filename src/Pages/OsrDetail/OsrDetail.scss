@@ -1,0 +1,19 @@
+$blue: #0037ff;
+$white: #ffffff;
+$black: #000000;
+$gray: #f2f2f2;
+$green: #39d52d;
+
+.jobTitleFromControl {
+  width: 730px;
+}
+
+@media screen and (max-width: 1500px) {
+  .jobTitleFromControl {
+    width: 350px;
+  }
+}
+
+#JobDes {
+  min-height: 120px;
+}
